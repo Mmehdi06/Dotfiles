@@ -1,0 +1,72 @@
+format = """
+$os\
+$username\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$python\
+$lua\
+$nodejs\
+$golang\
+$rust\
+$docker_context\
+$jobs\
+$cmd_duration\
+$line_break\
+$character"""
+
+[os.symbols]
+Macos = " "
+
+[username]
+show_always = true
+style_user = "fg:#C6DC80"
+style_root = "fg:#C6DC80"
+format = '[$user]($style)'
+disabled = false
+
+[directory]
+style = 'bold fg:dark_blue'
+format = '[ $path ]($style)'
+truncation_length = 3
+truncation_symbol = '…/'
+truncate_to_repo = false
+read_only = " 󰌾"
+
+[directory.substitutions]
+'Documents' = '󰈙'
+'Downloads' = ' '
+'Music' = ' '
+'Pictures' = ' '
+
+[cmd_duration]
+min_time = 0
+format = '⏳Took [$duration](bold yellow)'
+
+[docker_context]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[java]
+symbol = " "
+
+[lua]
+symbol = " "
+
+[memory_usage]
+symbol = "󰍛 "
+
+[nodejs]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
