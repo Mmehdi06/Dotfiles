@@ -1,5 +1,8 @@
 #Custom ZSH configuration
 
+# Make globbing case-insensitive
+setopt nocaseglob
+
 # Custom aliases
 alias ls='eza --all --long --git --no-filesize --icons=always --color=always --no-time --no-user --no-permissions'
 alias cd='z'
@@ -9,6 +12,8 @@ alias darwin-switch='darwin-rebuild switch --impure --flake ~/.config/nix'
 # Custom functions
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# Path to pipenv and virtualenv
+export PATH="$PATH:/Users/mehdimerkachi/Library/Python/3.9/bin"
 
 # Path to Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
