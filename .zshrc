@@ -13,9 +13,10 @@ fi
 
 # Custom aliases
 alias ls='eza --all --long --git --no-filesize --icons=always --color=always --no-time --no-user --no-permissions'
+alias ll='eza --all --long --icons=always --color=always '
 alias cd='z'
 alias c='clear'
-alias darwin-switch='darwin-rebuild switch --impure --flake ~/.config/nix'
+alias switch='darwin-rebuild switch --impure --flake ~/.config/nix'
 alias lg='lazygit'
 
 # Custom functions
