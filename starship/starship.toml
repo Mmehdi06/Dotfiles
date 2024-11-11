@@ -1,5 +1,4 @@
 format = """
-$os\
 $username\
 $directory\
 $git_branch\
@@ -11,23 +10,24 @@ $nodejs\
 $golang\
 $rust\
 $docker_context\
+$conda\
 $jobs\
 $cmd_duration\
 $line_break\
 $character"""
 
-[os.symbols]
-Macos = " "
+[fill]
+symbol = " "
 
 [username]
-show_always = true
+show_always = false
 style_user = "fg:#C6DC80"
 style_root = "fg:#C6DC80"
 format = '[$user]($style)'
 disabled = false
 
 [directory]
-style = 'bold fg:dark_blue'
+style = 'bold yellow'
 format = '[ $path ]($style)'
 truncation_length = 3
 truncation_symbol = '…/'
