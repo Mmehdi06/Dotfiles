@@ -28,6 +28,9 @@ export PATH="$PATH:/Users/mehdimerkachi/Library/Python/3.9/bin"
 # Path to Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
 
+# Path to SSH-Agent
+export SSH_AUTH_SOCK="~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
 # Starship prompt initialization
 eval "$(starship init zsh)"
 

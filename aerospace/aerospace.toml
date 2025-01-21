@@ -83,7 +83,7 @@ outer.right =      5
 # All possible commands: https://nikitabobko.github.io/AeroSpace/commands
 
 # Open up terminal with alt + cmd + t shortcut
-alt-cmd-t = 'exec-and-forget open -n -a "WezTerm"'
+alt-cmd-t = 'exec-and-forget open -n -a "Ghostty"'
 
 # Switch layouts
 alt-slash = 'layout tiles horizontal vertical'
@@ -183,6 +183,10 @@ if.app-id = 'com.github.wez.wezterm'
 run = 'move-node-to-workspace T'
 
 [[on-window-detected]]
+if.app-id= 'com.mitchellh.ghostty'
+run= 'move-node-to-workspace T'
+
+[[on-window-detected]]
 if.app-id = 'net.kovidgoyal.kitty'
 run = 'move-node-to-workspace T'
 
@@ -196,6 +200,10 @@ run = 'move-node-to-workspace B'
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.VSCode'
+run = 'move-node-to-workspace I'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.dt.Xcode'
 run = 'move-node-to-workspace I'
 
 [[on-window-detected]]
@@ -221,5 +229,10 @@ run = 'move-node-to-workspace M'
 [[on-window-detected]]
 if.app-id = 'com.apple.Music'
 run = 'move-node-to-workspace M'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.TV'
+run = 'move-node-to-workspace M'
+
 
 
