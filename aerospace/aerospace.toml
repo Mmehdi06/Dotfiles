@@ -234,5 +234,9 @@ run = 'move-node-to-workspace M'
 if.app-id = 'com.apple.TV'
 run = 'move-node-to-workspace M'
 
+[[on-window-detected]]
+if.app-id = 'app.zeniptv.mobile'
+run = 'move-node-to-workspace M'
+
 
 
