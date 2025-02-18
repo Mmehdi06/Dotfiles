@@ -1,12 +1,16 @@
-theme = catppuccin-mocha
+theme = dark:catppuccin-mocha, light:GruvboxLight
 font-family = Menlo Bold
 font-size = 14
-macos-titlebar-style = hidden
-window-padding-balance = true
-mouse-hide-while-typing = true
 window-padding-y = 12
 window-padding-x = 16
 
+macos-titlebar-style = hidden
+macos-icon = chalkboard
+
+window-padding-balance = true
+mouse-hide-while-typing = true
+
 keybind = global:cmd+o=toggle_quick_terminal
+
 
 
